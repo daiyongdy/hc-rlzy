@@ -21,6 +21,5 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void add(HCUserDO hcUserDO) {
 		hcUserDOMapper.insert(hcUserDO);
-		int i = 1 / 0;
 	}
 }

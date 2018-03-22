@@ -2,9 +2,8 @@ package com.cd.hc.dao.mapper;
 
 import com.cd.hc.dao.model.po.HCUserDO;
 import com.cd.hc.dao.model.po.HCUserDOExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface HCUserDOMapper {
     int countByExample(HCUserDOExample example);

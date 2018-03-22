@@ -20,7 +20,7 @@ public class UserController {
 	@RequestMapping("/add")
 	public String add() {
 		HCUserDO hcUserDO = new HCUserDO();
-		hcUserDO.setName("daiyiong");
+		hcUserDO.setUsername("daiyiong");
 		userService.add(hcUserDO);
 		return "success";
 	}

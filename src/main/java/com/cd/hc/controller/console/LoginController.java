@@ -15,9 +15,6 @@ import java.util.Map;
 @RequestMapping("")
 public class LoginController {
 
-
-
-
 	/**
 	 * 跳转登录页
 	 * @return

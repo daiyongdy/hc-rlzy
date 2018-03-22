@@ -1,6 +1,6 @@
 package com.cd.hc.service;
 
-import com.cd.hc.dao.model.po.HCUserDO;
+import com.cd.hc.dao.model.db.HCUserDO;
 
 /**
  * Created by zuti on 2018/3/22.
@@ -9,5 +9,7 @@ import com.cd.hc.dao.model.po.HCUserDO;
 public interface UserService {
 
 	void add(HCUserDO hcUserDO);
+
+	int getCount();
 
 }

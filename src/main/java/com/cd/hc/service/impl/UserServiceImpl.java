@@ -1,7 +1,8 @@
 package com.cd.hc.service.impl;
 
-import com.cd.hc.dao.mapper.HCUserDOMapper;
-import com.cd.hc.dao.model.po.HCUserDO;
+import com.cd.hc.dao.mapper.biz.HCUserBizMapper;
+import com.cd.hc.dao.mapper.db.HCUserDOMapper;
+import com.cd.hc.dao.model.db.HCUserDO;
 import com.cd.hc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +19,16 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private HCUserDOMapper hcUserDOMapper;
 
+	@Autowired
+	private HCUserBizMapper hcUserBizMapper;
+
 	@Override
 	public void add(HCUserDO hcUserDO) {
 		hcUserDOMapper.insert(hcUserDO);
+	}
+
+	@Override
+	public int getCount() {
+		return hcUserBizMapper.getCount();
 	}
 }

@@ -1,10 +1,11 @@
 package com.cd.hc.controller.console;
 
-import com.cd.hc.dao.model.po.HCUserDO;
+import com.cd.hc.dao.model.db.HCUserDO;
 import com.cd.hc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by zuti on 2018/3/22.
@@ -23,6 +24,12 @@ public class UserController {
 		hcUserDO.setUsername("daiyiong");
 		userService.add(hcUserDO);
 		return "success";
+	}
+
+	@RequestMapping("/count")
+	@ResponseBody
+	public int count() {
+		return userService.getCount();
 	}
 
 }

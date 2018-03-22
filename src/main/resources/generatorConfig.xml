@@ -11,12 +11,12 @@
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
-        <javaModelGenerator targetPackage="com.cd.hc.dao.model.po" targetProject="E:/cd/hc-rlzy/src/main/java">
+        <javaModelGenerator targetPackage="com.cd.hc.dao.model.db" targetProject="E:/cd/hc-rlzy/src/main/java">
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="mapper.db" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.cd.hc.dao.mapper" targetProject="E:/cd/hc-rlzy/src/main/java" type="XMLMAPPER"/>
+        <javaClientGenerator targetPackage="com.cd.hc.dao.mapper.db" targetProject="E:/cd/hc-rlzy/src/main/java" type="XMLMAPPER"/>
         <table tableName="hc_user" domainObjectName="HCUserDO"></table>
     </context>
 </generatorConfiguration>

@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.cd.hc.dao.mapper")
+@MapperScan({"com.cd.hc.dao.mapper.db","com.cd.hc.dao.mapper.biz"})
 public class Application {
 
 	public static void main(String[] args) {

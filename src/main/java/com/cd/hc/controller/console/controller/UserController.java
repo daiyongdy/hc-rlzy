@@ -1,4 +1,4 @@
-package com.cd.hc.controller.console;
+package com.cd.hc.controller.console.controller;
 
 import com.cd.hc.dao.model.db.HCUserDO;
 import com.cd.hc.service.UserService;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * email zuti@centaur.cn
  */
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/console/user")
 public class UserController {
 
 	@Autowired

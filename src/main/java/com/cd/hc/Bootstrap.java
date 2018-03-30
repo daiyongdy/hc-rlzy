@@ -11,7 +11,7 @@ import org.springframework.http.HttpStatus;
 @SpringBootApplication
 @MapperScan({"com.cd.hc.dao.mapper.db","com.cd.hc.dao.mapper.biz"})
 /**
- *  cui zhen yu
+ *  cui zhen
  */
 public class Bootstrap {
 
